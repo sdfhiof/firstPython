@@ -66,7 +66,7 @@ def report_time(user_command_city: str) -> None:
    print("report_time")
    tz = timezone(cities_dict[user_command_city])
    now_time = datetime.today().astimezone(tz)
-   text_to_speech(f"{user_command_city}현재 시각 {now_time.hour}시 0분 {now_time.second}초 입니다.")
+   text_to_speech(f"{user_command_city}현재 시각 {now_time.hour}시 {now_time.minute}분 {now_time.second}초 입니다.")
 def report_date(user_command_city: str) -> None:
    print("report_date")
    days = ['월', '화', '수', '목', '금', '토', '일']
